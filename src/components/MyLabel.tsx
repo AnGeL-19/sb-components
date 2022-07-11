@@ -23,6 +23,10 @@ export interface MyLabelProps {
      * Poner en Mayusculas
      */
     allCaps?: boolean;
+    /**
+     * Poner backgroundColor
+     */
+    backgroundColor?: string;
 }
 
 /**
@@ -34,11 +38,12 @@ export const MyLabel = ({
     color = 'primary',
     allCaps = false,
     colorCustom,
+    backgroundColor = 'transparent',
     ...props
 }:MyLabelProps) => {
   return (
     <span className={`label ${size} text-${color} }`}
-    style={{ color: colorCustom }}
+    style={{ color: colorCustom, backgroundColor }}
     >
         { allCaps ? label.toUpperCase() : label }
     </span>
