@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": false,
   "license": "MIT",
-  "typings": "dist/index.d.ts",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "repository": {
     "url": "https://github.com/AnGeL-19/sb-components",
     "type": "git"
